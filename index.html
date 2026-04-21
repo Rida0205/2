@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dr. Chadia Tayebi | Whity Centre Dentaire - Salé</title>
-    <meta name="description" content="Whity Centre Dentaire à Salé (Laayayda). Dr. Chadia Tayebi, chirurgien-dentiste. Soins dentaires, prothèse, orthodontie, implantologie, blanchiment et radiologie. Prenez rendez-vous en ligne.">
+    <title>Dr. Chadia Tayebi | Centre Dentaire Whity - Salé</title>
+    <meta name="description" content="Centre Dentaire Whity à Salé (Laayayda). Dr. Chadia Tayebi, chirurgien-dentiste. Soins dentaires, prothèse, orthodontie, implantologie, blanchiment et radiologie. Prenez rendez-vous en ligne.">
     
-    <!-- Preconnect pour accélérer le chargement -->
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -63,19 +63,9 @@
         .btn-secondary { background: white; color: #1e293b; padding: 14px 28px; border-radius: 40px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; border: 1px solid #e2e8f0; transition: all 0.2s; }
         .btn-secondary:hover { border-color: var(--primary); color: var(--primary); background: #f8fafc; }
         
-        /* Slider du Hero */
-        .hero-slider { position: relative; width: 100%; height: 380px; border-radius: 36px; overflow: hidden; box-shadow: 0 15px 25px rgba(0,0,0,0.05); background: #f8fafc; }
-        .slider-container { position: relative; width: 100%; height: 100%; }
-        .slider-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.5s ease; background-size: cover; background-position: center; background-color: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 24px; font-weight: 600; }
-        .slider-slide.active { opacity: 1; }
-        .slider-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; color: var(--primary-dark); font-size: 18px; backdrop-filter: blur(4px); transition: all 0.2s; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
-        .slider-arrow:hover { background: white; }
-        .slider-arrow-left { left: 16px; }
-        .slider-arrow-right { right: 16px; }
-        .slider-dots { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
-        .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.7); cursor: pointer; transition: all 0.2s; border: none; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .slider-dot::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: transparent; }
-        .slider-dot.active { background: white; width: 24px; border-radius: 4px; }
+        /* Image Fixe Hero (Image 1) */
+        .hero-image { width: 100%; height: 380px; border-radius: 36px; overflow: hidden; box-shadow: 0 15px 25px rgba(0,0,0,0.05); background: #f8fafc; }
+        .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
         /* Services */
         .section-title { text-align: center; margin-bottom: 36px; }
@@ -96,16 +86,10 @@
         .schedule { display: flex; flex-direction: column; gap: 16px; }
         .schedule-item { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 15px; }
 
-        /* About Section */
+        /* About Section avec Image Fixe (Image 2) */
         .about-section { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 40px; align-items: center; padding: 40px 0; }
-        .about-slider { position: relative; width: 100%; max-width: 380px; margin: 0 auto; aspect-ratio: 1/1; border-radius: 28px; overflow: hidden; box-shadow: 0 15px 25px rgba(0,0,0,0.05); background: #f8fafc; }
-        .about-slides { position: relative; width: 100%; height: 100%; }
-        .about-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.8s ease; background-size: cover; background-position: center; background-color: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 20px; font-weight: 600; }
-        .about-slide.active { opacity: 1; }
-        .about-dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; z-index: 10; padding: 6px 12px; background: rgba(0,0,0,0.2); backdrop-filter: blur(8px); border-radius: 30px; white-space: nowrap; }
-        .about-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.6); cursor: pointer; transition: all 0.3s; border: none; flex-shrink: 0; position: relative; }
-        .about-dot::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: transparent; }
-        .about-dot.active { background: white; width: 20px; border-radius: 10px; }
+        .about-image { width: 100%; max-width: 380px; margin: 0 auto; aspect-ratio: 1/1; border-radius: 28px; overflow: hidden; box-shadow: 0 15px 25px rgba(0,0,0,0.05); background: #f8fafc; }
+        .about-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .about-content h3 { font-family: 'Playfair Display', serif; font-size: 28px; color: #0f172a; margin-bottom: 20px; }
         .about-content p { color: #475569; margin-bottom: 16px; font-size: 15px; line-height: 1.7; }
 
@@ -116,7 +100,6 @@
         .testimonial-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
         .testimonial-avatar { width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), #0ab5c4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 18px; flex-shrink: 0; }
         .testimonial-info .name { font-size: 16px; font-weight: 600; color: #0f172a; display: block; }
-        .testimonial-info .date { font-size: 13px; color: #64748b; }
         .testimonial-stars { color: #eab308; font-size: 14px; margin-bottom: 12px; }
         .testimonial-text { color: #334155; font-size: 14px; line-height: 1.6; font-style: italic; flex: 1; }
 
@@ -155,9 +138,9 @@
             .map-container { height: 320px; }
             .services-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
             .about-section { grid-template-columns: 1fr; }
-            .about-slider { max-width: 320px; }
+            .about-image { max-width: 320px; }
             .rdv-section { padding: 32px 16px; }
-            .hero-slider { height: 280px; }
+            .hero-image { height: 280px; }
             .back-to-top { bottom: 20px; right: 20px; width: 44px; height: 44px; }
         }
         @media (max-width: 480px) {
@@ -166,8 +149,8 @@
             .service-card { padding: 20px 8px; }
             .service-icon { width: 48px; height: 48px; font-size: 22px; }
             .service-card h3 { font-size: 13px; }
-            .hero-slider { height: 220px; }
-            .about-slider { max-width: 280px; }
+            .hero-image { height: 220px; }
+            .about-image { max-width: 280px; }
             .testimonials-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -176,9 +159,9 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <!-- ICÔNE MODIFIÉE : Coeur + Médical -->
-                <div class="logo-icon" aria-hidden="true"><i class="fas fa-heartbeat"></i></div>
-                <div class="logo-text"><h1>Dr. Chadia Tayebi</h1><span>WHITY CENTRE DENTAIRE</span></div>
+                <!-- ICÔNE DENTAIRE -->
+                <div class="logo-icon" aria-hidden="true"><i class="fas fa-tooth"></i></div>
+                <div class="logo-text"><h1>Dr. Chadia Tayebi</h1><span>CENTRE DENTAIRE WHITY</span></div>
             </div>
             <div class="header-contact">
                 <a href="tel:+212537887271" aria-label="Appeler le 05 37 88 72 71"><i class="fas fa-phone-alt" aria-hidden="true"></i> 05 37 88 72 71</a>
@@ -200,19 +183,9 @@
                         <a href="tel:+212537887271" class="btn-secondary"><i class="fas fa-phone-alt" aria-hidden="true"></i> Appeler</a>
                     </div>
                 </div>
-                <div class="hero-slider" id="heroSlider">
-                    <div class="slider-container">
-                        <!-- IMAGES HERO : Remplacer [Image X] par vos propres noms de fichiers -->
-                        <div class="slider-slide active" style="background-image: url('hero1.jpg');" role="img" aria-label="Image du centre dentaire 1">[Image 1]</div>
-                        <div class="slider-slide" style="background-image: url('hero2.jpg');" role="img" aria-label="Image du centre dentaire 2">[Image 2]</div>
-                        <div class="slider-slide" style="background-image: url('hero3.jpg');" role="img" aria-label="Image du centre dentaire 3">[Image 3]</div>
-                        <div class="slider-slide" style="background-image: url('hero4.jpg');" role="img" aria-label="Image du centre dentaire 4">[Image 4]</div>
-                        <div class="slider-slide" style="background-image: url('hero5.jpg');" role="img" aria-label="Image du centre dentaire 5">[Image 5]</div>
-                        <div class="slider-slide" style="background-image: url('hero6.jpg');" role="img" aria-label="Image du centre dentaire 6">[Image 6]</div>
-                    </div>
-                    <button class="slider-arrow slider-arrow-left" onclick="changeSlide(-1)" aria-label="Image précédente"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                    <button class="slider-arrow slider-arrow-right" onclick="changeSlide(1)" aria-label="Image suivante"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-                    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Navigation des images"></div>
+                <!-- IMAGE FIXE 1 -->
+                <div class="hero-image">
+                    <img src="1.jpg" alt="Centre Dentaire Whity - Salle de soins">
                 </div>
             </section>
 
@@ -232,8 +205,7 @@
 
             <section class="info-section">
                 <div class="map-container">
-                    <!-- LIEN GOOGLE MAPS CORRIGÉ -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.7876475684546!2d-6.7671746!3d34.064083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76976ddd347a1%3A0x6e999a43bc66baa2!2sCentre%20Dentaire%20Whity%20Dr.%20Chadia%20Tayebi%20(M%C3%A9decin%20Dentiste)!5e0!3m2!1sfr!2sma!4v1745231419339!5m2!1sfr!2sma" allowfullscreen="" loading="lazy" title="Carte Google Maps du Whity Centre Dentaire"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.7876475684546!2d-6.7671746!3d34.064083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76976ddd347a1%3A0x6e999a43bc66baa2!2sCentre%20Dentaire%20Whity%20Dr.%20Chadia%20Tayebi%20(M%C3%A9decin%20Dentiste)!5e0!3m2!1sfr!2sma!4v1745231419339!5m2!1sfr!2sma" allowfullscreen="" loading="lazy" title="Carte Google Maps du Centre Dentaire Whity"></iframe>
                 </div>
                 <div class="hours">
                     <h3>Horaires d'ouverture</h3>
@@ -246,29 +218,20 @@
                 </div>
             </section>
 
-            <!-- SECTION ABOUT : Remplacer [Image X] par vos propres noms de fichiers -->
+            <!-- SECTION ENGAGEMENT AVEC IMAGE FIXE 2 -->
             <section class="about-section">
-                <div class="about-slider" id="aboutSlider">
-                    <div class="about-slides">
-                        <div class="about-slide active" style="background-image: url('about1.jpg');" role="img" aria-label="Dr. Chadia Tayebi - Photo 1">[Image 1]</div>
-                        <div class="about-slide" style="background-image: url('about2.jpg');" role="img" aria-label="Cabinet Whity - Photo 2">[Image 2]</div>
-                        <div class="about-slide" style="background-image: url('about3.jpg');" role="img" aria-label="Équipement moderne - Photo 3">[Image 3]</div>
-                        <div class="about-slide" style="background-image: url('about4.jpg');" role="img" aria-label="Salle de soins - Photo 4">[Image 4]</div>
-                        <div class="about-slide" style="background-image: url('about5.jpg');" role="img" aria-label="Accueil - Photo 5">[Image 5]</div>
-                        <div class="about-slide" style="background-image: url('about6.jpg');" role="img" aria-label="Consultation - Photo 6">[Image 6]</div>
-                        <div class="about-slide" style="background-image: url('about7.jpg');" role="img" aria-label="Équipe Whity - Photo 7">[Image 7]</div>
-                    </div>
-                    <div class="about-dots" id="aboutDots" role="tablist" aria-label="Navigation des photos"></div>
+                <div class="about-image">
+                    <img src="2.jpg" alt="Dr. Chadia Tayebi - Centre Dentaire Whity">
                 </div>
                 <div class="about-content">
-                    <h3>Expertise & Accueil</h3>
-                    <p>Le <strong>Whity Centre Dentaire</strong>, dirigé par le Dr. Chadia Tayebi, est un espace moderne dédié à la santé et à l'esthétique de votre sourire. Situé à Laayayda-Salé, en face de la Résidence Doha, notre cabinet vous accueille dans un cadre apaisant et aseptisé.</p>
+                    <h3>Engagement & Expertise</h3>
+                    <p>Le <strong>Centre Dentaire Whity</strong>, dirigé par le Dr. Chadia Tayebi, est un espace moderne dédié à la santé et à l'esthétique de votre sourire. Situé à Laayayda-Salé, en face de la Résidence Doha, notre cabinet vous accueille dans un cadre apaisant et aseptisé.</p>
                     <p>Le Dr. Chadia Tayebi, chirurgien-dentiste expérimentée, vous propose une prise en charge globale et personnalisée, de la prévention aux soins complexes. Passionnée par son métier, elle veille à offrir des traitements de haute qualité tout en minimisant l'inconfort. Nous sommes équipés des dernières technologies pour garantir des diagnostics précis et des interventions efficaces.</p>
                     <p>Notre philosophie : allier compétence technique, écoute attentive et douceur pour que chaque visite se déroule en toute sérénité.</p>
                 </div>
             </section>
 
-            <!-- SECTION TÉMOIGNAGES AVEC LES AVIS FOURNIS -->
+            <!-- SECTION TÉMOIGNAGES (SANS "il y a...") -->
             <section>
                 <div class="section-title"><h2>Ce que disent nos patients</h2><p>Avis vérifiés Google Maps</p></div>
                 <div class="testimonials-grid" id="testimonialsContainer"></div>
@@ -288,14 +251,14 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <div class="footer-logo"><div class="logo-icon" aria-hidden="true"><i class="fas fa-heartbeat"></i></div><div><h2 style="color:white; font-family:'Playfair Display';">Dr. Chadia Tayebi</h2><p style="color:#94a3b8;">WHITY CENTRE DENTAIRE</p></div></div>
+            <div class="footer-logo"><div class="logo-icon" aria-hidden="true"><i class="fas fa-tooth"></i></div><div><h2 style="color:white; font-family:'Playfair Display';">Dr. Chadia Tayebi</h2><p style="color:#94a3b8;">CENTRE DENTAIRE WHITY</p></div></div>
             <div class="footer-info">
                 <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Lot Najm N° 132, Av. De La Base Aérienne, Laayayda-Salé</p>
                 <p><i class="fas fa-phone-alt" aria-hidden="true"></i> 05 37 88 72 71</p>
                 <p><i class="fab fa-whatsapp" aria-hidden="true"></i> +212 708 009 825</p>
                 <p><i class="fas fa-envelope" aria-hidden="true"></i> whity.centredentaire@gmail.com</p>
             </div>
-            <div class="footer-bottom"><p>© 2026 Whity Centre Dentaire - Dr. Chadia Tayebi. Tous droits réservés.</p></div>
+            <div class="footer-bottom"><p>© 2026 Centre Dentaire Whity - Dr. Chadia Tayebi. Tous droits réservés.</p></div>
         </div>
     </footer>
 
@@ -304,19 +267,6 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
     <script>
-        // Slider Hero
-        let currentSlide = 0; const slides = document.querySelectorAll('.slider-slide'); const dotsContainer = document.getElementById('sliderDots');
-        function initSlider() { dotsContainer.innerHTML = ''; slides.forEach((_, i) => { const dot = document.createElement('button'); dot.classList.add('slider-dot'); dot.setAttribute('aria-label', `Aller à l'image ${i+1} sur ${slides.length}`); dot.setAttribute('role', 'tab'); if(i===0) dot.classList.add('active'); dot.addEventListener('click', ()=>goToSlide(i)); dotsContainer.appendChild(dot); }); }
-        function goToSlide(n) { slides[currentSlide].classList.remove('active'); dotsContainer.children[currentSlide].classList.remove('active'); currentSlide = (n+slides.length)%slides.length; slides[currentSlide].classList.add('active'); dotsContainer.children[currentSlide].classList.add('active'); }
-        function changeSlide(dir) { goToSlide(currentSlide+dir); }
-        initSlider(); setInterval(()=>changeSlide(1), 6000);
-
-        // Slider About
-        let currentAboutSlide = 0; const aboutSlides = document.querySelectorAll('.about-slide'); const aboutDotsContainer = document.getElementById('aboutDots');
-        function initAboutSlider() { aboutDotsContainer.innerHTML = ''; aboutSlides.forEach((_, i) => { const dot = document.createElement('button'); dot.classList.add('about-dot'); dot.setAttribute('aria-label', `Voir l'image ${i+1} sur ${aboutSlides.length}`); dot.setAttribute('role', 'tab'); if(i===0) dot.classList.add('active'); dot.addEventListener('click', ()=>goToAboutSlide(i)); aboutDotsContainer.appendChild(dot); }); }
-        function goToAboutSlide(n) { aboutSlides[currentAboutSlide].classList.remove('active'); aboutDotsContainer.children[currentAboutSlide].classList.remove('active'); currentAboutSlide = (n+aboutSlides.length)%aboutSlides.length; aboutSlides[currentAboutSlide].classList.add('active'); aboutDotsContainer.children[currentAboutSlide].classList.add('active'); }
-        initAboutSlider(); setInterval(()=>goToAboutSlide(currentAboutSlide+1), 6000);
-
         // Smooth Scroll
         document.querySelectorAll('.js-smooth-scroll').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -328,37 +278,49 @@
             });
         });
 
-        // Témoignages (Basé sur les avis fournis)
+        // Témoignages (SANS DATE "il y a...")
         const testimonials = [
-            { name: "Nouama Boucherita", date: "il y a 6 mois", stars: 5, text: "طبيبة في المستوى صراحة طيبة ولطيفة وكفائة", avatar: "N" },
-            { name: "rachid laaraj", date: "il y a 8 mois", stars: 5, text: "J'ai eu l'occasion de consulter ce dentiste et j'en suis très satisfait. Le cabinet est impeccable, très propre et accueillant. Elle maîtrise parfaitement son métier...", avatar: "R" },
-            { name: "Amine ER Rammal", date: "il y a 6 minutes", stars: 5, text: "طبيبة في المستوى", avatar: "A" },
-            { name: "Hind El_fadli", date: "il y a 6 mois", stars: 5, text: "Bonne chance, Dr Shadia.", avatar: "H" },
-            { name: "Farah Farah", date: "il y a 6 mois", stars: 5, text: "Honestly this is a good dentiste i would recommend everyone to go to this place in sale", avatar: "F" },
-            { name: "Hamza Chahir", date: "il y a 6 mois", stars: 5, text: "عيادة في المستوى، أنصح بها كل شخص.", avatar: "H" },
-            { name: "Ikram El", date: "il y a 7 mois", stars: 5, text: "الدكتورة شادية جزاك الله كل خير طبيعية محترفة متقنة لعملها", avatar: "I" },
-            { name: "Daïf Moustapha", date: "il y a 6 mois", stars: 5, text: "Très attentionné et surtout des soins de grande qualité pour un coût bien moindre...", avatar: "D" },
-            { name: "lymane Allaoui", date: "il y a 7 mois", stars: 5, text: "I had a treatment done recently and it was absolutely perfect! Everything was explained clearly...", avatar: "L" }
+            { name: "Nouama Boucherita", stars: 5, text: "طبيبة في المستوى صراحة طيبة ولطيفة وكفائة", avatar: "N" },
+            { name: "rachid laaraj", stars: 5, text: "J'ai eu l'occasion de consulter ce dentiste et j'en suis très satisfait. Le cabinet est impeccable, très propre et accueillant. Elle maîtrise parfaitement son métier...", avatar: "R" },
+            { name: "Amine ER Rammal", stars: 5, text: "طبيبة في المستوى", avatar: "A" },
+            { name: "Hind El_fadli", stars: 5, text: "Bonne chance, Dr Shadia.", avatar: "H" },
+            { name: "Farah Farah", stars: 5, text: "Honestly this is a good dentiste i would recommend everyone to go to this place in sale", avatar: "F" },
+            { name: "Hamza Chahir", stars: 5, text: "عيادة في المستوى، أنصح بها كل شخص.", avatar: "H" },
+            { name: "Ikram El", stars: 5, text: "الدكتورة شادية جزاك الله كل خير طبيعية محترفة متقنة لعملها", avatar: "I" },
+            { name: "Daïf Moustapha", stars: 5, text: "Très attentionné et surtout des soins de grande qualité pour un coût bien moindre...", avatar: "D" },
+            { name: "lymane Allaoui", stars: 5, text: "I had a treatment done recently and it was absolutely perfect! Everything was explained clearly...", avatar: "L" }
         ];
         
-        document.getElementById('testimonialsContainer').innerHTML = testimonials.map(t => `<div class="testimonial-card"><div class="testimonial-header"><div class="testimonial-avatar" aria-hidden="true">${t.avatar}</div><div class="testimonial-info"><span class="name">${t.name}</span><span class="date">${t.date}</span></div></div><div class="testimonial-stars" aria-label="${t.stars} étoiles sur 5">${'★'.repeat(t.stars)}${'☆'.repeat(5-t.stars)}</div><p class="testimonial-text">"${t.text}"</p></div>`).join('');
+        // Affichage sans la ligne "date"
+        document.getElementById('testimonialsContainer').innerHTML = testimonials.map(t => `
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar" aria-hidden="true">${t.avatar}</div>
+                    <div class="testimonial-info">
+                        <span class="name">${t.name}</span>
+                    </div>
+                </div>
+                <div class="testimonial-stars" aria-label="${t.stars} étoiles sur 5">
+                    ${'★'.repeat(t.stars)}${'☆'.repeat(5-t.stars)}
+                </div>
+                <p class="testimonial-text">"${t.text}"</p>
+            </div>
+        `).join('');
 
-        // Calendrier (Adapté aux horaires : 9h-20h en semaine, 9h-14h le samedi)
+        // Calendrier
         flatpickr("#rdvDate", { 
             locale: "fr", 
             dateFormat: "d/m/Y", 
             minDate: "today", 
-            disable: [d => d.getDay() === 0] // Fermé Dimanche
+            disable: [d => d.getDay() === 0]
         });
         
         const timeSelect = document.getElementById('rdvTime'); 
         function updateTimeSlots() {
-            // Option simple : On remplit de 9h à 20h avec intervalles de 30 min
-            // Le script vérifiera au clic si c'est Samedi après 14h
             timeSelect.innerHTML = '<option value="" disabled selected>Choisir une heure</option>';
             for(let h = 9; h < 20; h++) {
                 for(let m of ['00', '30']) {
-                    if (h === 19 && m === '30') continue; // Dernier rdv à 19h30 pour finir à 20h
+                    if (h === 19 && m === '30') continue;
                     const timeStr = `${h.toString().padStart(2, '0')}:${m}`;
                     timeSelect.appendChild(new Option(timeStr, timeStr));
                 }
@@ -379,7 +341,7 @@
             if(day === 6 && t > "14:00") return alert('Le samedi, les consultations se terminent à 14h00.'); 
             if(day !== 6 && t > "20:00") return alert('En semaine, les consultations se terminent à 20h00.');
             
-            window.open(`https://wa.me/212708009825?text=Bonjour%20Whity%20Centre%20Dentaire,%0A%0AJe%20souhaite%20prendre%20rendez-vous%20le%20${d}%20%C3%A0%20${t}.%0A%0APouvez-vous%20confirmer%20%3F%0A%0AMerci.`, '_blank'); 
+            window.open(`https://wa.me/212708009825?text=Bonjour%20Centre%20Dentaire%20Whity,%0A%0AJe%20souhaite%20prendre%20rendez-vous%20le%20${d}%20%C3%A0%20${t}.%0A%0APouvez-vous%20confirmer%20%3F%0A%0AMerci.`, '_blank'); 
         });
         
         window.addEventListener('scroll', ()=>document.getElementById('backToTop').classList.toggle('show', window.scrollY > 300));
